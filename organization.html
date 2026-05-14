@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>協會組織 | 臺灣特技舞蹈協會</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎪</text></svg>" />
+</head>
+<body>
+<nav id="navbar" class="scrolled">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-placeholder">🎪</div>
+    <div class="logo-text"><span class="zh">臺灣特技舞蹈協會</span><span class="en">TAIWAN ACROBATIC DANCE ASSOC.</span></div>
+  </a>
+  <div class="nav-menu" id="navMenu">
+    <div class="nav-item"><a class="nav-link" href="https://taiwanacrodance.com/最新消息/" target="_blank">最新消息</a></div>
+    <div class="nav-item dropdown">
+      <a class="nav-link active" href="#">關於協會 ▾</a>
+      <div class="dropdown-menu">
+        <a href="about.html">協會簡介</a>
+        <a href="charter.html">協會章程</a>
+        <a href="organization.html">協會組織</a>
+      </div>
+    </div>
+    <div class="nav-item"><a class="nav-link" href="https://taiwanacrodance.com/公告事項/" target="_blank">公告事項</a></div>
+    <div class="nav-item"><a class="nav-link" href="index.html#contact">聯絡我們</a></div>
+    <div class="nav-item"><a class="nav-link" href="downloads.html">表單下載</a></div>
+  </div>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="section-tag">ORGANIZATION</span>
+    <h1>協會組織</h1>
+    <p>第一屆理監事及秘書處人員名單</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="container">
+    <div class="content-box reveal">
+      <h2>第一屆理監事及祕書處人員</h2>
+      <ul>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【理事長】</strong>林佳鋒</li>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【榮譽顧問】</strong>陳碧涵</li>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【執行長】</strong>吳瑛芳</li>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【常務理事】</strong>李曉蕾</li>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【副理事長】</strong>陳建和</li>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【理事】</strong>程育君、古品杰、杜偉誠、孫正學、楊立微、劉彥廷</li>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【常務監事】</strong>張京嵐</li>
+        <li><strong style="color:var(--gold);min-width:90px;display:inline-block">【監事】</strong>陳儒文、王偉帆</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>版權所有 © 2026 <span>臺灣特技舞蹈協會</span> | <a href="index.html">回首頁</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  const nb = document.getElementById('navbar');
+  nb.classList.add('scrolled');
+  document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navMenu').classList.toggle('open'));
+  document.querySelectorAll('.reveal').forEach(el => {
+    new IntersectionObserver(([e]) => { if(e.isIntersecting) e.target.classList.add('visible'); }, {threshold:0.1}).observe(el);
+  });
+</script>
+</body>
+</html>
