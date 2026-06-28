@@ -1,0 +1,12 @@
+# robots.txt - 臺灣特技舞蹈協會
+# https://taiwanacrodance.zeabur.app/
+
+# 允許所有搜尋引擎爬取
+User-agent: *
+Allow: /
+
+# 禁止爬取資產檔案目錄（非必要）
+Disallow: /assets/
+
+# Sitemap 位置（告訴 Google 在哪裡找頁面清單）
+Sitemap: https://taiwanacrodance.zeabur.app/sitemap.xml
